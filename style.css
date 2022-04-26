@@ -5,15 +5,24 @@ html, body {
 
 * {
 	margin: 0 auto;
+	overflow: hidden;
 }
 
-
+#mainc {
+	margin-top: 3vw;
+	padding-top: 3%;
+	display: flex;
+	height: 80vh;
+	width: 80vw;
+	background-color: #1f1f1f;
+	overflow: hidden;
+}
 	
 #upgradeArea {
 	display: grid;
 	grid-template-rows: 10% minmax(0, 80%) 10% margin: auto;
 	height: 80%;
-	width: 200px;
+	width: 20%;
 	background-color: black;
 	border: 3px solid gray;
 	overflow-y: auto;
@@ -21,6 +30,7 @@ html, body {
 
 #upgradeArea::-webkit-scrollbar {
 	width: 7px;
+	transition-duration: 0.15s;
 }
 
 #upgradeArea::-webkit-scrollbar-track {
@@ -29,6 +39,7 @@ html, body {
 
 #upgradeArea::-webkit-scrollbar-thumb {
   background: #888;
+  
 }
 
 #upgradeArea::-webkit-scrollbar-thumb:hover {
@@ -41,7 +52,7 @@ html, body {
 	width: 90%;
 	margin: 3px;
 	margin-right: -10px;
-	height: 50px;
+	height: 55px;
 	transition-duration: 0.25s;
 }
 
@@ -49,4 +60,16 @@ html, body {
 	background-color: darkgray;
 }
 
+#clickArea {
+	background-color: black;
+	border: 3px solid gray;
+	height: 80%;
+	width: 60%;
+}
 
+#status {
+	background-color: black;
+	border: 3px solid gray;
+	height: 80%;
+	width: 20%;
+}
